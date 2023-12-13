@@ -41,7 +41,7 @@ namespace OrderingGiftsBugrina.Pages
 
         private void AddDocuments(object sender, RoutedEventArgs e)
         {
-            MainWindow.init.OpenPages(MainWindow.pages.add);
+            MainWindow.init.OpenPages(MainWindow.pages.addOrder);
         }
     }
 }

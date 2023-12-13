@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OrderingGiftsBugrina.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,27 @@ namespace OrderingGiftsBugrina
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
+        public List<OrderContext> AllDocuments = new OrderContext().All();
+        public enum pages
+        {
+            main,
+            addOrder
+        }
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
+            OpenPages(pages.main);
+        }
+
+        public void OpenPages(pages _pages)
+        {
+            if (_pages == pages.main)
+                frame.Navigate(new Pages.Main());
+            else if (_pages == pages.addOrder)
+                frame.Navigate(new Pages.AddOrder());
+
         }
     }
 }
