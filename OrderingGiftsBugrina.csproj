@@ -72,6 +72,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\OrderInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -108,7 +109,6 @@
     <Folder Include="Classes\Common\" />
     <Folder Include="Elements\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Models\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
