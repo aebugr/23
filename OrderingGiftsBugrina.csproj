@@ -58,6 +58,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Elements\ItemOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +72,9 @@
     </Compile>
     <Compile Include="Classes\Common\DBConnection.cs" />
     <Compile Include="Classes\OrderContext.cs" />
+    <Compile Include="Elements\ItemOrder.xaml.cs">
+      <DependentUpon>ItemOrder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Icontext.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -109,7 +116,6 @@
     <Resource Include="Icon_1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Elements\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="OrderingGiftsBugrina.Elements.ItemOrder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OrderingGiftsBugrina.Elements"
+             mc:Ignorable="d" d:DesignWidth="800" Height="212">
+    <Grid Background="#cec5c4">
+        <Label x:Name="fioTB" Foreground="#1d0827" Content="ФИО: Бугрина Алёна Евгеньевна" Margin="38,20,356,155" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="messageTB" Foreground="#1d0827" Content="Сообщение: Позвонить по приезде" Margin="38,56,383,119" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="adressTB" Foreground="#1d0827" Content="Адрес доставки: ул. Луначарского 24" Margin="38,93,383,86" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="dateTB" Foreground="#1d0827" Content="Дата и время: 2023-12-13 22:31" Margin="38,131,383,48" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="mailTB" Foreground="#1d0827" Content="Почта для связи: Bugrina@permaviat.ru" Margin="38,169,383,11" FontWeight="Bold" FontSize="18"/>
+        <Button  Background="White" FontWeight="Bold" Foreground="#5537a7" Content="Изменить" Margin="581,72,104,105" Click="Edit_Click" FontSize="18"/>
+        <Button Background="White" FontWeight="Bold" Foreground="#5537a7" Content="Удалить" Margin="581,122,104,55" Click="Delete_Click" FontSize="18"/>
+    </Grid>
+</UserControl>
