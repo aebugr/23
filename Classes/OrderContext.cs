@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace OrderingGiftsBugrina.Classes
             List<OrderContext> allOrder = new List<OrderContext>();
 
             OleDbConnection connection = Common.DBConnection.Connection();
-            OleDbDataReader dataOrder = Common.DBConnection.Query("SELECT * FROM [Таблица]", connection);
+            OleDbDataReader dataOrder = Common.DBConnection.Query("SELECT * FROM [OrderingGifts]", connection);
             while (dataOrder.Read())
             {
                 OrderContext newOrder = new OrderContext();
@@ -35,7 +35,7 @@ namespace OrderingGiftsBugrina.Classes
         public void Delete()
         {
             OleDbConnection connection = Common.DBConnection.Connection();
-            Common.DBConnection.Query($"DELETE FROM [Таблица] WHERE [Код] = {this.Id}", connection);
+            Common.DBConnection.Query($"DELETE FROM [OrderingGifts] WHERE [Код] = {this.Id}", connection);
             Common.DBConnection.CloseConnection(connection);
         }
 
@@ -50,7 +50,7 @@ namespace OrderingGiftsBugrina.Classes
                                               $"[Текст сообщения] = '{this.Message}', " +
                                               $"[Адрес доставки] = '{this.Adress}', " +
                                               $"[Дата и время отправки] = '{this.Date.ToString("dd.MM.yyyy")}', " +
-                                              $"[Почта для связи] = {this.Mail}, " +
+                                              $"[Почта для связи] = '{this.Mail}' " +
                                               $"WHERE [Код] = {this.Id}", connection);
 
                 Common.DBConnection.CloseConnection(connection);
@@ -59,7 +59,7 @@ namespace OrderingGiftsBugrina.Classes
             {
                 OleDbConnection connection = Common.DBConnection.Connection();
                 Common.DBConnection.Query("INSERT INTO" +
-                                              "[Таблица]" +
+                                              "[OrderingGifts]" +
                                                     "([ФИО заказчика], " +
                                                     "[Текст сообщения], " +
                                                     "[Адрес доставки], " +
@@ -70,7 +70,7 @@ namespace OrderingGiftsBugrina.Classes
                                                $"'{this.Message}', " +
                                                $"'{this.Adress}', " +
                                                $"'{this.Date.ToString("dd.MM.yyyy")}', " +
-                                               $"{this.Mail}, ", connection);
+                                               $"'{this.Mail}')", connection);
 
                 Common.DBConnection.CloseConnection(connection);
             }

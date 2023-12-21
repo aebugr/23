@@ -32,7 +32,7 @@ namespace OrderingGiftsBugrina.Elements
             messageTB.Content = $"Сообщение: {Order.Message}";
             adressTB.Content = $"Адрес доставки: {Order.Adress}";
             dateTB.Content = $"Дата и время: {Order.Date.ToString("dd.MM.yyyy")}";
-            mailTB.Content = $"Почта для связи:  + {Order.Mail}";
+            mailTB.Content = $"Почта для связи:   {Order.Mail}";
             this.NewOrder = Order;
         }
         private void Edit_Click(object sender, RoutedEventArgs e)
@@ -42,7 +42,7 @@ namespace OrderingGiftsBugrina.Elements
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             NewOrder.Delete();
-            MainWindow.init.All = new OrderContext().All();
+            MainWindow.init.allOrd = new OrderContext().All();
             MainWindow.init.OpenPages(MainWindow.pages.main);
         }
     }

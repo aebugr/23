@@ -4,14 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:OrderingGiftsBugrina.Elements"
-             mc:Ignorable="d" d:DesignWidth="800" Height="212">
-    <Grid Background="#cec5c4">
-        <Label x:Name="fioTB" Foreground="#1d0827" Content="ФИО: Бугрина Алёна Евгеньевна" Margin="38,20,356,155" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="messageTB" Foreground="#1d0827" Content="Сообщение: Позвонить по приезде" Margin="38,56,383,119" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="adressTB" Foreground="#1d0827" Content="Адрес доставки: ул. Луначарского 24" Margin="38,93,383,86" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="dateTB" Foreground="#1d0827" Content="Дата и время: 2023-12-13 22:31" Margin="38,131,383,48" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="mailTB" Foreground="#1d0827" Content="Почта для связи: Bugrina@permaviat.ru" Margin="38,169,383,11" FontWeight="Bold" FontSize="18"/>
-        <Button  Background="White" FontWeight="Bold" Foreground="#5537a7" Content="Изменить" Margin="581,72,104,105" Click="Edit_Click" FontSize="18"/>
-        <Button Background="White" FontWeight="Bold" Foreground="#5537a7" Content="Удалить" Margin="581,122,104,55" Click="Delete_Click" FontSize="18"/>
+             mc:Ignorable="d" d:DesignWidth="539.072" Height="205">
+    <Grid Background="#cec5c4" Margin="0,0,10,10">
+        <Label x:Name="fioTB" Foreground="#1d0827" Content="ФИО: Бугрина Алёна Евгеньевна" Margin="10,0,242,155" FontWeight="Bold" FontSize="15" Height="29" VerticalAlignment="Bottom"/>
+        <Label x:Name="messageTB" Foreground="#1d0827" Content="Сообщение: Позвонить по приезде" Margin="10,0,242,118" FontWeight="Bold" FontSize="15" Height="32" VerticalAlignment="Bottom"/>
+        <Label x:Name="adressTB" Foreground="#1d0827" Content="Адрес доставки: ул. Луначарского 24" Margin="10,0,222,85" FontWeight="Bold" FontSize="15" Height="33" VerticalAlignment="Bottom"/>
+        <Label x:Name="dateTB" Foreground="#1d0827" Content="Дата и время: 2023-12-13 22:31" Margin="10,0,242,50" FontWeight="Bold" FontSize="15" Height="35" VerticalAlignment="Bottom"/>
+        <Label x:Name="mailTB" Foreground="#1d0827" Content="Почта для связи: Bugrina@permaviat.ru" Margin="10,0,222,16" FontWeight="Bold" FontSize="15" Height="29" VerticalAlignment="Bottom"/>
+        <Button  Background="White" FontWeight="Bold" Foreground="#5537a7" Content="Изменить" Margin="361,0,0,125" Click="Edit_Click" FontSize="15" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="136"/>
+        <Button Background="White" FontWeight="Bold" Foreground="#5537a7" Content="Удалить" Margin="361,0,0,59" Click="Delete_Click" FontSize="15" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="136"/>
     </Grid>
 </UserControl>

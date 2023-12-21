@@ -9,7 +9,7 @@ namespace OrderingGiftsBugrina.Classes.Common
 {
     public class DBConnection
     {
-        public static readonly string Path = @"C:\Users\User\Desktop\пр25\OrderingGiftsBugrina\Database.accdb";
+        public static readonly string Path = Environment.CurrentDirectory +  @"\Database.accdb";
         public static OleDbConnection Connection()
         {
             OleDbConnection oleDbConnection = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0; Data Source=" + Path);

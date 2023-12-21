@@ -29,7 +29,7 @@ namespace OrderingGiftsBugrina.Pages
         public void CreateUI()
         {
             parent.Children.Clear();
-            foreach (OrderContext order in MainWindow.init.All)
+            foreach (OrderContext order in MainWindow.init.allOrd)
             {
                 parent.Children.Add(new Elements.ItemOrder(order));
             }

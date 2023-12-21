@@ -1,0 +1,48 @@
+﻿<Page x:Class="OrderingGiftsBugrina.Pages.AddOrder"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OrderingGiftsBugrina.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="370" d:DesignWidth="800"
+      Title="AddOrder">
+
+    <Grid Background="#785c78">
+        <Grid VerticalAlignment="Top" Height="80" Background="#b59fb5">
+            <Label Content="Оформление заказа" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="106,0,0,0" FontWeight="Bold" Foreground="White" FontSize="22"/>
+            <Button Background="White" FontSize="18" FontWeight="Bold" Foreground="#5537a7" Width="132" Height="40" Content="Вернуться" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="592,0,0,0" Click="Back" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="1.102"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.481"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button x:Name="addBtn" Background="White" FontSize="18" FontWeight="Bold" Foreground="#5537a7" Width="132" Height="40" Content="Сохранить" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="435,0,0,0" Click="Add" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="1.102"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.481"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </Grid>
+        <TextBox x:Name="fioAdd" HorizontalAlignment="Left" Margin="311,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="449" Height="34"/>
+        <TextBox x:Name="messageAdd" HorizontalAlignment="Left" Margin="311,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="449" Height="34"/>
+        <TextBox x:Name="adressAdd" HorizontalAlignment="Left" Margin="311,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="449" Height="34"/>
+        <DatePicker x:Name="dateAdd" Margin="311,275,31,70" PreviewTextInput="dateAdd_PreviewTextInput" RenderTransformOrigin="0.503,1.147"/>
+        <TextBox x:Name="mailAdd" HorizontalAlignment="Left" Margin="311,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="449" Height="34"/>
+        <Label Content="Ваше ФИО : " Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="41,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введите сообщение : " Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="41,153,0,0" VerticalAlignment="Top"/>
+        <Label Content="Адрес доставки : " Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="41,211,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата и время доставки : " Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="41,266,0,0" VerticalAlignment="Top"/>
+        <Label Content="Почта для связи : " Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="41,321,0,0" VerticalAlignment="Top"/>
+        <Label Content="* при необходимости" Foreground="#47063e" FontSize="11" FontWeight="Bold" HorizontalAlignment="Left" Margin="154,178,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

@@ -22,7 +22,7 @@ namespace OrderingGiftsBugrina
     public partial class MainWindow : Window
     {
         public static MainWindow init;
-        public List<OrderContext> AllDocuments = new OrderContext().All();
+        public List<OrderContext> allOrd = new OrderContext().All();
         public enum pages
         {
             main,
